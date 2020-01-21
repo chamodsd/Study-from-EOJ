@@ -1,26 +1,2 @@
 1.string也可以用类似char数组的操作
-2.当用string=某char数组，char数组中无意义的字符将被删去，仅仅保留有意义的字符串（如char a[100];cin >> a(设为"one");string res = a;则res=="one"但a!="one"）
-
-#include <iostream>
-using namespace std;
-
-int main() {
-	int n;
-
-	cin >> n;
-	for (int i = 0; i < n; i++) {
-		cout << "case #" << i << ':' << endl;
-
-		/*--------------------------------------------*/
-		string res = "ab";
-
-
-		/*--------------------------------------------*/
-		//Output
-		cout << res[0] << endl;
-
-		/*--------------------------------------------*/
-
-	}
-	return 0;
-}
+2.当用string=某char数组，char数组中无意义的字符将被删去，仅仅保留有意义的字符串（如char a[100];cin >> a(设为"one");string res = a;则res=="one"但a!="one"，因为a的100个成员都是a的一部分）
