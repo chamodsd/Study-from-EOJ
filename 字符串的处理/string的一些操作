@@ -1,2 +1,8 @@
 1.string也可以用类似char数组的操作
 2.当用string=某char数组，char数组中无意义的字符将被删去，仅仅保留有意义的字符串（如char a[100];cin >> a(设为"one");string res = a;则res=="one"但a!="one"，因为a的100个成员都是a的一部分）
+3.求string s长度的方法：
+/*--------------------------------------------------------*/
+  l=s.size(); //注：不适用于char[int] str，详见https://www.runoob.com/cplusplus/cpp-strings.html
+  while(s[l])l++; 
+  //上述l均是s的真实长度
+/*--------------------------------------------------------*/
